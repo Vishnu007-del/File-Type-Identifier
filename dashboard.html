@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <div class="header">
+
+    <div>
+        <h1>📁 File Type Identifier</h1>
+        <p>Identify and analyze uploaded files instantly</p>
+    </div>
+
+    <div>
+
+        <button id="themeBtn" class="theme-btn" onclick="toggleTheme()">
+            🌙 
+        </button>
+
+        <div class="profile">
+            <h3 id="welcome"></h3>
+            <p id="date"></p>
+        </div>
+
+    </div>
+
+</div>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📁 File Type Identifier</h1>
+
+<div class="profile">
+
+<h3 id="welcome"></h3>
+
+<p id="date"></p>
+
+</div>
+
+<div class="upload">
+
+<input type="file" id="file">
+
+<button onclick="identifyFile()">Identify File</button>
+
+</div>
+
+<div class="preview">
+
+<img id="imagePreview" width="250" style="display:none;">
+
+</div>
+
+<div class="card">
+
+<h2>File Information</h2>
+
+<p id="filename"></p>
+
+<p id="extension"></p>
+
+<p id="category"></p>
+
+<p id="mime"></p>
+
+<p id="size"></p>
+
+<p id="modified"></p>
+
+</div>
+
+<div class="stats">
+
+<h2>Statistics</h2>
+
+<p id="count"></p>
+
+<p id="lastfile"></p>
+
+</div>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
